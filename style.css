@@ -1,0 +1,241 @@
+body {
+    background-image: url(img/Back.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container__column {
+    /* Space between columns */
+    margin: 0 5px;
+    /* Layout each column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.container__column_1 {
+    position: relative;
+    /* Space between columns */
+    /* Layout each column */
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+}
+
+
+.container__content {
+    /* Take available height */
+    flex: 1;
+    text-align: center;
+
+}
+
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    margin: 20px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+
+.container h4 {
+    width: 250px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.container__content>p {
+    margin-top: 16px;
+    font-size: 13px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.profile-1,
+.profile-2 {
+    width: 300px;
+    height: 170px;
+    line-height: 50px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+
+}
+
+.profile-1 i {
+    font-size: 25px;
+    text-decoration: none;
+    float: left;
+    color: black;
+    text-align: center;
+    color: white;
+
+}
+
+.profile-2 i {
+    font-size: 25px;
+    text-decoration: none;
+    float: left;
+    color: black;
+    text-align: center;
+    color: white;
+
+}
+
+.profile-1 i p {
+    margin: 0;
+    float: right;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.profile-2 i p {
+    margin: 0;
+    float: right;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.fa-brands :hover {
+    font-size: 17px;
+    transition: 0.10s;
+    color: pink;
+}
+
+.fa-solid :hover {
+    font-size: 17px;
+    transition: 0.10s;
+    color: pink;
+}
+
+.profile-2 {
+    margin-left: 7px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.profile-2 img {
+    float: right;
+    margin-top: -150px;
+    margin-right: -50px;
+}
+
+@media only screen and (max-width: 400px) {
+    .profile-2 img {
+        margin-left: 20px;
+        margin-right: -25px;
+    }
+
+    .profile-2 {
+        margin-left: 20px;
+    }
+}
+
+.container__line {
+    /* Border */
+    border-right: 2px solid #aaa;
+
+    /* Positioned at the left */
+    left: 40px;
+    position: absolute;
+    top: 7%;
+
+    /* Take full height */
+    height: 88%;
+}
+
+.container__items {
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container__item {
+    margin-bottom: 8px;
+}
+
+.container__top {
+    /* Center the content horizontally */
+    align-items: center;
+    display: flex;
+}
+
+.container__circle {
+    /* Rounded border */
+    background-color: rgb(170, 170, 170);
+    border-radius: 9999px;
+
+    /* Size */
+    height: 32px;
+    width: 32px;
+}
+
+.container__title {
+    /* Take available width */
+    flex: 1;
+    padding-left: 20px;
+}
+
+.container__desc {
+    /* Make it align with the title */
+    margin-left: 30px;
+    
+}
+.container__title h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    text-shadow: 0px 2px 4px white;
+    font-style: italic;
+    
+}
+.container__desc ul li {
+    list-style: disc;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+
